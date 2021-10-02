@@ -1,0 +1,9 @@
+#!/bin/bash
+#to update 
+yum update -y
+#to install httpd(apache2)
+yum install httpd -y
+#to start 
+systemctl start httpd -y
+#to enable os level registration
+yum enable httpd

@@ -1,0 +1,16 @@
+# linux link for the node-exporter(wget is used to epel)(#observe the vesrions while installing)
+wget https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz
+#that link is in zip format we need to unzip it 
+tar -xzf node_exporter-1.2.2.linux-amd64.tar.gz
+#for rename of the node exporter(mv name renamed)
+mv node_exporter-1.2.2.linux-amd64 watchdog
+#to enter into the directory 
+cd watchdog
+#observe that if we login into the node_exporter file it wont run in back ground i.e 
+#if we do ./node_exporter it will and if we want to do any other process we need to come out
+#i.e we need to exit from the node-exporter . in order to make it run background 
+#nohup sh name of the agent ,and keep on present  (&)
+nohup sh node_exporter &
+
+
+

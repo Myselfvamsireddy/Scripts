@@ -1,0 +1,8 @@
+#this was the link 
+https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/wls/10g/r3/cluster/session_state/files/shoppingcart.zip
+#to unzip
+unzip shoppingcart.zip
+#after unzip that we will get war file in the opt folder
+#we need to copy that war file into the tomcat and to webapps in it
+#for copying the war file of the shopping cart
+cp shoppingcart.war tomcat/webapps

@@ -1,0 +1,7 @@
+#Java is the prerequisit for the maven ensure that there was java in the server in which you are using
+#download maven ensure the versions they are going to updated
+wget https://dlcdn.apache.org/maven/maven-3/3.8.2/binaries/apache-maven-3.8.2-bin.zip
+#to unzip maven
+unzip apache-maven-3.8.2-bin.zip
+#change permissions 
+chmod -R 700 maven

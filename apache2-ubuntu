@@ -1,0 +1,9 @@
+#!/bin/bash
+#for update
+apt-get update -y
+#to install apache2
+apt-get install apache2 -y
+#to start apache
+systemctl start apache2
+#for os level regestration
+systemctl enable apache2

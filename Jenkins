@@ -1,0 +1,20 @@
+cd /tmp
+#link for the JDK java 
+wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
+rpm -ivh jdk-8u131-linux-x64.rpm
+#java by default it will go the /usr folder 
+#to install jenkins in the ec2
+#to enable jenkins
+wget -O /etc/yum.repos.d/jenkins.repo \
+   https://pkg.jenkins.io/redhat-stable/jenkins.repo
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+#try this new commands(which for demonized)
+amazon-linux-extras install epel -y 
+#to Update
+yum update -y
+#to intall jenkins
+yum install jenkins -y
+#to start jenkins
+systemctl start jenkins
+#to enable as os level registration
+systemctl enable jenkins
